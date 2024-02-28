@@ -6,7 +6,7 @@ import { Input } from 'src/components/ui/Input'
 import { Textarea } from 'src/components/ui/Textarea'
 import { Button } from 'src/components/ui/Button'
 
-import { api } from 'src/utils/services/api'
+import axios from 'axios'
 import {
   formatPhone,
   notifyLoading,
@@ -43,7 +43,7 @@ export const ContactContainer = ({ id }: { id: string }) => {
   const onSubmit: SubmitHandler<Inputs> = async () => {
     try {
       notifyLoading()
-      await api.post(endpoints.sendEmail, body)
+      await axios.post(endpoints.sendEmail, body)
       dismissAll()
       notifySuccess()
       setTimeout(() => {
