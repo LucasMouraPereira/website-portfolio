@@ -12,6 +12,7 @@ import CssInJS from 'src/utils/icons/styled-components.svg'
 import Redux from 'src/utils/icons/Redux.svg'
 import Sass from 'src/utils/icons/Sass.svg'
 import Figma from 'src/utils/icons/Figma.svg'
+import Graphql from 'src/utils/icons/Graphql.svg'
 
 import { expertiseData } from './data'
 
@@ -41,6 +42,7 @@ export const ExpertiseContainer = ({ id }: { id: string }) => {
     redux: <Redux />,
     sass: <Sass />,
     figma: <Figma />,
+    graphql: <Graphql />,
   }
   return (
     <Section id={id}>

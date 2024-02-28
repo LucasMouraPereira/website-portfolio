@@ -1,10 +1,6 @@
 import type { ChildrenProps } from 'src/utils/types/global.types'
 import * as S from './styled'
 
-type ContainerProps = {
-  className: string
-} & ChildrenProps
-
-export const Container = ({ children, className }: ContainerProps) => (
-  <S.Container className={className}>{children}</S.Container>
+export const Container = ({ children }: ChildrenProps) => (
+  <S.Container>{children}</S.Container>
 )

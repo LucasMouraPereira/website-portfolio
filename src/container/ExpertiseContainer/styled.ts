@@ -41,8 +41,18 @@ export const Title = styled.h1`
 export const Text = styled.div`
   ${({ theme }) => css`
     color: ${theme.colors.primary[50]};
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
     h1 {
       color: ${theme.colors.palette.green[300]};
+    }
+    p {
+      width: 100%;
+      max-width: 420px;
+      margin-top: 60px;
+      line-height: 180%;
+      text-align: justify;
     }
   `}
 `

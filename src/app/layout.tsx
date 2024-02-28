@@ -3,6 +3,8 @@ import { StyledComponentsRegistry } from 'src/app/registry'
 
 import type { ChildrenProps } from 'src/utils/types/global.types'
 
+import 'react-toastify/dist/ReactToastify.css'
+
 const RootLayout = ({ children }: ChildrenProps) => {
   return (
     <html lang="pt-br">

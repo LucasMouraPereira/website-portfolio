@@ -1,12 +1,16 @@
 import * as S from './styled'
 
 type ButtonProps = {
-  label: string
-  onClick: () => void
+  type?: 'submit'
+  children?: React.ReactNode
+  label?: string
+  onClick?: () => void
 }
 
-export const Button = ({ label, onClick }: ButtonProps) => {
-  return (
+export const Button = ({ type, label, children, onClick }: ButtonProps) => {
+  return !!type ? (
+    <S.FormButton type={type}>{children}</S.FormButton>
+  ) : (
     <S.Btn onClick={onClick}>
       <span>{label}</span>
     </S.Btn>
