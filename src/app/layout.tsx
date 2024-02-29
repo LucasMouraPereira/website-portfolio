@@ -3,6 +3,11 @@ import { StyledComponentsRegistry } from 'src/app/registry'
 
 import type { ChildrenProps } from 'src/utils/types/global.types'
 
+import 'swiper/css'
+import 'swiper/css/effect-coverflow'
+import 'swiper/css/pagination'
+import 'swiper/css/navigation'
+
 import 'react-toastify/dist/ReactToastify.css'
 
 const RootLayout = ({ children }: ChildrenProps) => {

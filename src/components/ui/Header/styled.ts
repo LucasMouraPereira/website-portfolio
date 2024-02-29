@@ -33,7 +33,7 @@ export const ContentHeader = styled.div`
 export const WrapperLogo = styled.div`
   ${({ theme }) => css`
     width: 100%;
-    max-width: fit-content;
+    max-width: 172px;
     h1 {
       font-size: 28px;
       b {
