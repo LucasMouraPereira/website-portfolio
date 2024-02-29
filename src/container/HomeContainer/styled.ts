@@ -55,6 +55,7 @@ export const Presentation = styled.div`
       font-size: 24px;
     }
     ${theme.breakpoints.minWidth('lg')} {
+      padding: 68px;
       flex-direction: row;
       gap: unset;
       h3 {

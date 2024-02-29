@@ -14,6 +14,16 @@ export const HomeContainer = ({ id }: { id: string }) => {
   const customCard = {
     width: '1136px',
   }
+
+  const downloadFile = () => {
+    const fileUrl = '/Curriculo-Lucas Moura Pereira.pdf'
+    const link = document.createElement('a')
+    link.href = fileUrl
+    link.setAttribute('download', 'Curriculo-Lucas Moura Pereira.pdf')
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
   return (
     <Section id={id}>
       <S.PageContainer>
@@ -36,10 +46,7 @@ export const HomeContainer = ({ id }: { id: string }) => {
                 React.js, Next.js, Redux, JavaScript, TypeScript, Styled
                 Components, Material UI e consumo de APIs REST e GraphQL.
               </p>
-              <Button
-                label="Download CV"
-                onClick={() => router.push('/about')}
-              />
+              <Button label="Download CV" onClick={downloadFile} />
               <Button
                 label="Saiba Mais"
                 onClick={() => router.push('/about')}
