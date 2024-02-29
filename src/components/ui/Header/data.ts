@@ -18,7 +18,7 @@ export const dataHeader = {
     },
     {
       id: '03',
-      label: 'Work',
+      label: 'Projects',
       href: '/work',
     },
     {

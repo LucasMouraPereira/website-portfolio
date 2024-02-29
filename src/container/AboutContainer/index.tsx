@@ -17,7 +17,7 @@ interface Icons {
 
 export const AboutContainer = ({ id }: { id: string }) => {
   const customCard = {
-    'background-color': 'rgba(59, 130, 246, 0.2)',
+    'background-color': '#3b82',
     width: '190px',
   }
   const icons: Icons = {

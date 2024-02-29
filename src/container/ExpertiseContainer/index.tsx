@@ -26,7 +26,7 @@ export const ExpertiseContainer = ({ id }: { id: string }) => {
   const [title, setTitle] = useState(expertiseData[0].title)
   const [description, setDescription] = useState(expertiseData[0].text)
   const customCard = {
-    'background-color': 'rgba(59, 130, 246, 0.2)',
+    'background-color': '#3b82',
     width: '160px',
     margin: 'unset',
   }

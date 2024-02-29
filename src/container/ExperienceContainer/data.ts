@@ -1,0 +1,42 @@
+export const data = [
+  {
+    name: 'LATAM PASS',
+    jobTitle: 'Desenvolvedor Front-end',
+    company: 'Ioasys/Alpargatas',
+    date: 'Fev 2024 - Atualmente',
+    text: 'Desenvolveu e realizou manutenção para o website Latam Pass utilizando HTML, CSS, JavaScript, além de empregar fremework como Bootstrap e jQuery.',
+    link: 'https://latampass.latam.com/pt_br/',
+  },
+  {
+    name: 'SDP - Sistema Divina Providência',
+    jobTitle: 'Desenvolvedor Front-end',
+    company: 'Vtecnologias',
+    date: 'Jul 2023 - Dez 2023',
+    text: 'Desenvolveu o website SDP - Sistema Divina Providência utilizando NextJs, Styled Components, TypeScript e integração com API REST.',
+    link: 'https://sdp-frontend-seven.vercel.app/',
+  },
+  {
+    name: 'Institucional Suvinil',
+    jobTitle: 'Desenvolvedor Front-end',
+    company: 'Ioasys/Alpargatas',
+    date: 'Out 2020 - Dez 2023',
+    text: 'Desenvolveu e realizou manutenção para o website Institucional Suvinil utilizando NextJs, Styled Components, TypeScript e integração com API REST.',
+    link: 'https://www.suvinil.com.br/',
+  },
+  {
+    name: 'Loja Suvinil',
+    jobTitle: 'Desenvolvedor Front-end',
+    company: 'Ioasys/Alpargatas',
+    date: 'Out 2020 - Dez 2023',
+    text: 'Desenvolveu e realizou manutenção para o website Loja Suvinil utilizando NextJs, Styled System, TypeScript e integração com API REST e com a Vtex.',
+    link: 'https://loja.suvinil.com.br/',
+  },
+  {
+    name: 'Glasu',
+    jobTitle: 'Desenvolvedor Front-end',
+    company: 'Ioasys/Alpargatas',
+    date: 'Out 2020 - Dez 2023',
+    text: 'Desenvolveu e realizou manutenção para o website Glasu da Suvinil utilizando NextJs, Styled System, TypeScript e integração com API REST.',
+    link: 'https://www.glasu.com.br/',
+  },
+]
