@@ -48,7 +48,7 @@ export const ExperienceContainer = ({ id }: { id: string }) => {
 
                   <p>{newExperience.text}</p>
                   <Link href={newExperience.link}>
-                    <strong>Veja o site:</strong> {newExperience.link}
+                    <strong>Check out the website:</strong> {newExperience.link}
                   </Link>
                 </S.Project>
               </S.WrapperText>

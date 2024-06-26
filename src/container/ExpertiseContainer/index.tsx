@@ -47,10 +47,10 @@ export const ExpertiseContainer = ({ id }: { id: string }) => {
   return (
     <Section id={id}>
       <Card>
-        <S.Title>Conhecimentos</S.Title>
+        <S.Title>Skills</S.Title>
         <S.Presentation>
           <S.Text>
-            <h1>Conhecimentos</h1>
+            <h1>Skills</h1>
             <h3>{title}</h3>
             <p>{description}</p>
           </S.Text>

@@ -15,7 +15,7 @@ export const WorkContainer = ({ id }: { id: string }) => {
       <S.WrapperPage>
         <Card styled={customCard}>
           <S.PageContainer>
-            <h1>Projetos</h1>
+            <h1>Projects</h1>
             <CustomSwiper list={data} />
           </S.PageContainer>
         </Card>

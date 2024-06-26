@@ -68,8 +68,8 @@ export const ContactContainer = ({ id }: { id: string }) => {
       <Card>
         <S.PageContainer>
           <S.Text>
-            <h1>Vamos Conversar?</h1>
-            <h2>Fale mais sobre seus projetos!</h2>
+            <h1>Let`s chat?</h1>
+            <h2>Tell me more about your projects!</h2>
             <Image
               src="/images/techny-receiving-a-letter-or-email.gif"
               width={400}
@@ -79,14 +79,14 @@ export const ContactContainer = ({ id }: { id: string }) => {
           </S.Text>
 
           <S.Form onSubmit={handleSubmit(onSubmit)}>
-            <h4>Nós escreva uma menssagem:</h4>
+            <h4>We`ll write a message:</h4>
             <Input
               type="text"
               register={register}
               name="fullName"
               required={true}
               error={errors.fullName}
-              placeholder="Nome Completo"
+              placeholder="Full Name"
             />
             <Input
               type="email"
@@ -95,7 +95,7 @@ export const ContactContainer = ({ id }: { id: string }) => {
               name="email"
               required="Endereço de email é necessário"
               error={errors.email}
-              placeholder="E-mail"
+              placeholder="Email"
             />
             <Input
               type="tel"
@@ -104,7 +104,7 @@ export const ContactContainer = ({ id }: { id: string }) => {
               name="phone"
               required={true}
               error={errors.phone}
-              placeholder="Telefone"
+              placeholder="Phone"
               onChange={handleChangePhone}
             />
             <Input
@@ -113,16 +113,16 @@ export const ContactContainer = ({ id }: { id: string }) => {
               name="subject"
               required={true}
               error={errors.subject}
-              placeholder="Assunto"
+              placeholder="Subject"
             />
             <Textarea
               register={register}
               name="message"
               required={true}
-              placeholder="Mensagem"
+              placeholder="Message"
             />
             <Button type="submit">
-              <span>Enviar</span>
+              <span>Send</span>
             </Button>
           </S.Form>
         </S.PageContainer>

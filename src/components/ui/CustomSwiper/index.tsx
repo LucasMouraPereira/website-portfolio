@@ -8,14 +8,13 @@ import * as S from './styled'
 export interface Projects {
   list: Array<{
     name: string
-    shotDescription: string
+    shortDescription: string
     description: string
     tags: string[]
     link: string
     github: string
   }>
 }
-
 export const CustomSwiper = ({ list }: Projects) => {
   return (
     <S.WrapperSwiper>
@@ -41,7 +40,7 @@ export const CustomSwiper = ({ list }: Projects) => {
             <S.WrapperText>
               <S.Presentation>
                 <h2>{item.name}</h2>
-                <p>{item.shotDescription}</p>
+                <p>{item.shortDescription}</p>
               </S.Presentation>
               <S.WrapperList>
                 {item.tags.map((tag) => (
@@ -60,7 +59,7 @@ export const CustomSwiper = ({ list }: Projects) => {
             </S.Slider>
             <S.WrapperButton>
               <Button
-                label="Veja o código no github"
+                label="Check out the code on GitHub"
                 onClick={() => window.open(item.github, '_blank')}
               />
             </S.WrapperButton>

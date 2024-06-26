@@ -6,11 +6,11 @@ export const AboutData = {
     alt: 'Picture of the author',
   },
   aboutMe: {
-    title: 'Quem sou',
+    title: 'Who I am',
     author: 'Lucas Moura Pereira',
     career: 'Frontend Developer',
     presentation:
-      'Meu nome é Lucas Moura Pereira. Atualmente atuo como Frontend Developer na Ioasys, empresa parte da Alpargatas destinada em desenvolver soluções, desde a estratégia até sua sustentação e evolução contínua. Além disso, também atuo como freelancer no desenvolvimento Frontend e UI Designer. Desenvolvo interfaces modernas e de alta qualidade, concentrado em performance, animações, responsividade e SEO.',
+      'My name is Lucas Moura Pereira. Currently, I work as a Frontend Developer at Ioasys, a company within Alpargatas focused on developing solutions from strategy to ongoing support and evolution. Additionally, I work as a freelancer in Frontend development and UI Design. I create modern, high-quality interfaces, focusing on performance, animations, responsiveness, and SEO.',
   },
   links: [
     {

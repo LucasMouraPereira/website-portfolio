@@ -10,7 +10,7 @@ import * as S from './styled'
 
 export const HomeContainer = ({ id }: { id: string }) => {
   const router = useRouter()
-  const displayText = useTextAnimation({ fullText: 'Portfólio' })
+  const displayText = useTextAnimation({ fullText: 'Portfolio' })
   const customCard = {
     width: '1136px',
   }
@@ -41,14 +41,15 @@ export const HomeContainer = ({ id }: { id: string }) => {
             </S.TextAndIcon>
             <S.Cv>
               <p>
-                Desenvolvedor Front-end formado em Engenharia de Software na
-                Pontifícia Universidade de Minas Gerais e com experiência em
-                React.js, Next.js, Redux, JavaScript, TypeScript, Styled
-                Components, Material UI e consumo de APIs REST e GraphQL.
+                Frontend Developer with a degree in Software Engineering from
+                the Pontifical Catholic University of Minas Gerais and
+                experience in React.js, Next.js, Redux, JavaScript, TypeScript,
+                Styled Components, Material UI, and consumption of REST and
+                GraphQL APIs.
               </p>
               <Button label="Download CV" onClick={downloadFile} />
               <Button
-                label="Saiba Mais"
+                label="Learn more"
                 onClick={() => router.push('/about')}
               />
             </S.Cv>
