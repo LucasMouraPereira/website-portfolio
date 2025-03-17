@@ -1,21 +1,21 @@
 import styled, { css } from 'styled-components'
 
 type WrapperHeaderProps = {
-  isAtTop: boolean
+  $isAtTop: boolean
 }
 export const WrapperHeader = styled.nav<WrapperHeaderProps>`
-  ${({ theme, isAtTop }) => css`
+  ${({ theme, $isAtTop }) => css`
     display: flex;
     justify-content: center;
     position: fixed;
     top: 0;
     left: 0;
-    background: ${isAtTop
+    background: ${$isAtTop
       ? theme.colors.context.page.bg
-      : 'rgba(84, 89, 95, 0.6)'};
+      : theme.colors.primary[250]};
     width: 100%;
     min-height: 80px;
-    box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 2px 4px 4px 2px ${theme.colors.primary[300]};
   `}
 `
 
@@ -134,17 +134,17 @@ export const MenuMobile = styled.div`
 `
 
 type LineProps = {
-  showAsideMenu: boolean
+  $showAsideMenu: boolean
 }
 
 export const Line = styled.div<LineProps>`
-  ${({ theme, showAsideMenu }) => css`
+  ${({ theme, $showAsideMenu }) => css`
     width: 32px;
     height: 1px;
     background-color: ${theme.colors.primary[50]};
     margin: 5px;
     transition: 0.4s;
-    ${showAsideMenu &&
+    ${$showAsideMenu &&
     css`
       &.line-0 {
         transform: rotate(-45deg) translate(-11px, 10px);
@@ -160,17 +160,17 @@ export const Line = styled.div<LineProps>`
 `
 
 export const AsideMenu = styled.aside<LineProps>`
-  ${({ theme, showAsideMenu }) => css`
+  ${({ theme, $showAsideMenu }) => css`
     margin-top: 80px;
     width: 250px;
-    height: 100vh;
+    height: 100%;
     background-color: ${theme.colors.context.page.bg};
     position: fixed;
     top: 0;
-    right: ${showAsideMenu ? '0' : '-250px'};
+    right: ${$showAsideMenu ? '0' : '-250px'};
     transition: right 0.3s ease-in-out;
     padding: 20px;
-    box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 2px 4px 4px 2px ${theme.colors.primary[300]};
     z-index: 2;
     border-radius: 8px;
   `}

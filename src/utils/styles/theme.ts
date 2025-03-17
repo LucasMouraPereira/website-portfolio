@@ -12,4 +12,4 @@ export const theme = {
   breakpoints,
   roboto_mono,
   spacings,
-}
+} as const

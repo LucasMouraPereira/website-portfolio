@@ -51,7 +51,7 @@ export const Header = () => {
   }, [])
 
   return (
-    <S.WrapperHeader isAtTop={isAtTop}>
+    <S.WrapperHeader $isAtTop={isAtTop}>
       <S.ContentHeader>
         <S.WrapperLogo>
           <h2>
@@ -84,16 +84,17 @@ export const Header = () => {
           </S.WrapperLinks>
         </S.Menu>
       </S.ContentHeader>
+
       <S.MenuMobile onClick={() => setShowAsideMenu(!showAsideMenu)}>
         {menuIcon.map((_, index) => (
           <S.Line
-            className={`line-${index}`}
             key={index}
-            showAsideMenu={showAsideMenu}
+            className={`line-${index}`}
+            $showAsideMenu={showAsideMenu}
           />
         ))}
 
-        <S.AsideMenu showAsideMenu={showAsideMenu}>
+        <S.AsideMenu $showAsideMenu={showAsideMenu}>
           <S.WrapperLinks>
             {links.map((link) => (
               <S.Links

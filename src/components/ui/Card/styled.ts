@@ -20,15 +20,19 @@ export const WrapperCard = styled.div<WrapperCardProps>`
     background-color: ${theme.colors.palette.blue[100]};
     padding: 18px;
     border-radius: 4px;
-    box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 2px 4px 4px 2px ${theme.colors.primary[300]};
     display: flex;
     flex-direction: column;
     height: auto;
     animation: ${fadeIn} 1s ease-in;
-    gap: 36px;
+    gap: 4px;
     align-items: center;
     margin: 0 16px;
     color: ${theme.colors.primary[50]};
+
+    ${theme.breakpoints.minWidth('sm')} {
+      gap: 20px;
+    }
 
     ${theme.breakpoints.minWidth('lg')} {
       flex-direction: row;

@@ -4,7 +4,6 @@ import { Button } from 'src/components/ui/Button'
 import Link from 'next/link'
 
 import * as S from './styled'
-
 export interface Projects {
   list: Array<{
     name: string

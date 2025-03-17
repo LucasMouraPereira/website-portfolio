@@ -19,13 +19,13 @@ export const WrapperSwiper = styled.div`
 `
 
 export const WrapperText = styled.div`
-  ${() => css`
+  ${({ theme }) => css`
     width: 100%;
     max-width: 1066px;
     padding: 16px;
     display: flex;
     flex-direction: column;
-    box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 2px 4px 4px 2px ${theme.colors.primary[300]};
     background-color: #3b82;
     margin-top: 16px;
   `}
@@ -51,7 +51,7 @@ export const WrapperList = styled.ul`
     flex-wrap: wrap;
     gap: 20px;
     li {
-      font-size
+      font-size: 16px;
     }
   `}
 `

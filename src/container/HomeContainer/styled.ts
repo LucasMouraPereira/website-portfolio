@@ -54,6 +54,7 @@ export const Presentation = styled.div`
     span {
       font-size: 24px;
     }
+
     ${theme.breakpoints.minWidth('lg')} {
       padding: 68px;
       flex-direction: row;
@@ -96,7 +97,7 @@ export const Cv = styled.div`
     text-align: justify;
     p {
       font-size: 16px;
-      font-weight: 300;
+      font-weight: ${theme.typography.weight.regular};
       color: ${theme.colors.palette.gray[300]};
       line-height: 160%;
     }

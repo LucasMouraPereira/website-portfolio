@@ -1,6 +1,10 @@
 export const colors = {
   primary: {
     50: '#efefef',
+    100: 'rgba(255, 255, 255, 0.5)',
+    200: 'rgba(255, 255, 255, 0.1)',
+    250: 'rgba(84, 89, 95, 0.6)',
+    300: 'rgba(0, 0, 0, 0.25)',
   },
   context: {
     page: {
@@ -11,10 +15,12 @@ export const colors = {
   },
   palette: {
     gray: {
+      100: '#dedede',
       300: '#9ca3af',
     },
     green: {
       300: '#5EEAD4',
+      400: '#3b82',
     },
     purple: {
       300: '#8e44ad',

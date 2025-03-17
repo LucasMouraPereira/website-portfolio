@@ -20,4 +20,10 @@ export const typography = {
     primary: `var(--font-roboto-mono), ${fallback}`,
     second: `var(--font-source-code-pro), ${fallback}`,
   },
+  weight: {
+    regular: '400',
+    medium: '500',
+    semiBold: '600',
+    bold: '700',
+  },
 }

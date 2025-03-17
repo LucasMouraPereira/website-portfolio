@@ -39,7 +39,7 @@ export const GlobalStyles = createGlobalStyle`
     h5,
     h6 {
       font-family: ${theme.typography.family.second};
-      font-weight: 700;
+      font-weight: ${theme.typography.weight.bold};
     }
     a {
       font-family: ${theme.typography.family.second};

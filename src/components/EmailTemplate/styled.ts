@@ -1,11 +1,11 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { Body, Container, Section, Text } from '@react-email/components'
 
 export const StyledBody = styled(Body)`
-  background-color: #ffffff;
-  color: #24292e;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
-    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  ${({ theme }) => css`
+    background-color: ${theme.colors.primary[50]};
+    color: ${theme.colors.context.page.text};
+  `}
 `
 
 export const StyledContainer = styled(Container)`
@@ -20,10 +20,12 @@ export const StyledTitle = styled(Text)`
 `
 
 export const StyledSection = styled(Section)`
-  padding: 24px;
-  border: solid 1px #dedede;
-  border-radius: 5px;
-  text-align: center;
+  ${({ theme }) => css`
+    padding: 24px;
+    border: solid 1px ${theme.colors.palette.gray[100]};
+    border-radius: 5px;
+    text-align: center;
+  `}
 `
 
 export const StyledText = styled(Text)`

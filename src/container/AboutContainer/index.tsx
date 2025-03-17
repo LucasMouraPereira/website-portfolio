@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import { Section } from 'src/components/ui/Section'
 import { Card } from 'src/components/ui/Card'
 
@@ -17,8 +16,7 @@ interface Icons {
 
 export const AboutContainer = ({ id }: { id: string }) => {
   const customCard = {
-    'background-color': '#3b82',
-    width: '190px',
+    margin: 'unset',
   }
   const icons: Icons = {
     instagram: <Instagram />,
@@ -45,12 +43,12 @@ export const AboutContainer = ({ id }: { id: string }) => {
             <S.SocialMedia>
               <ul>
                 {AboutData.links.map(({ icon, link, text }) => (
-                  <Link key={icon} href={link} target="blank">
+                  <S.WrapperLink key={icon} href={link} target="blank">
                     <Card styled={customCard}>
                       <li>{icons[icon]}</li>
                       {text}
                     </Card>
-                  </Link>
+                  </S.WrapperLink>
                 ))}
               </ul>
             </S.SocialMedia>

@@ -121,7 +121,7 @@ export const Project = styled.div`
     }
     p {
       font-size: 14px;
-      font-weight: 300;
+      font-weight: ${theme.typography.weight.regular};
       color: ${theme.colors.palette.gray[300]};
       line-height: 160%;
       margin-bottom: 16px;
@@ -153,8 +153,8 @@ export const WrapperText = styled.div`
     width: 100%;
     height: 280px;
     padding: 16px;
-    box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.25);
-    background-color: #3b82;
+    box-shadow: 2px 4px 4px 2px ${theme.colors.primary[300]};
+    background-color: ${theme.colors.palette.green[400]};
     ${theme.breakpoints.minWidth('lg')} {
       max-width: 530px;
     }

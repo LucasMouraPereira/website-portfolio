@@ -1,13 +1,13 @@
 import styled, { css } from 'styled-components'
 
 export const Btn = styled.div`
-  ${() => css`
+  ${({ theme }) => css`
     line-height: 50px;
     height: 50px;
     text-align: center;
     width: 250px;
     cursor: pointer;
-    color: #fff;
+    color: ${theme.colors.primary[50]};
     transition: all 0.3s;
     position: relative;
     span {
@@ -30,8 +30,8 @@ export const Btn = styled.div`
       border-bottom-width: 1px;
       border-top-style: solid;
       border-bottom-style: solid;
-      border-top-color: rgba(255, 255, 255, 0.5);
-      border-bottom-color: rgba(255, 255, 255, 0.5);
+      border-top-color: ${theme.colors.primary[100]};
+      border-bottom-color: ${theme.colors.primary[100]};
       transform: scale(0.1, 1);
     }
     ::after {
@@ -43,7 +43,7 @@ export const Btn = styled.div`
       height: 100%;
       z-index: 1;
       transition: all 0.3s;
-      background-color: rgba(255, 255, 255, 0.1);
+      background-color: ${theme.colors.primary[200]};
     }
     &:hover {
       ::before {
@@ -59,14 +59,14 @@ export const Btn = styled.div`
 `
 
 export const FormButton = styled.button`
-  ${() => css`
+  ${({ theme }) => css`
     line-height: 50px;
     height: 50px;
     text-align: center;
     background: transparent;
     border: none;
     cursor: pointer;
-    color: #fff;
+    color: ${theme.colors.primary[50]};
     transition: all 0.3s;
     position: relative;
     span {
@@ -89,8 +89,8 @@ export const FormButton = styled.button`
       border-bottom-width: 1px;
       border-top-style: solid;
       border-bottom-style: solid;
-      border-top-color: rgba(255, 255, 255, 0.5);
-      border-bottom-color: rgba(255, 255, 255, 0.5);
+      border-top-color: ${theme.colors.primary[100]};
+      border-bottom-color: ${theme.colors.primary[100]};
       transform: scale(0.1, 1);
     }
     ::after {
@@ -102,7 +102,7 @@ export const FormButton = styled.button`
       height: 100%;
       z-index: 1;
       transition: all 0.3s;
-      background-color: rgba(255, 255, 255, 0.1);
+      background-color: ${theme.colors.primary[200]};
     }
     &:hover {
       ::before {

@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import Link from 'next/link'
 
 export const Presentation = styled.div`
   ${() => css`
@@ -20,22 +21,23 @@ export const WrapperText = styled.div`
     h4 {
       color: ${theme.colors.palette.green[300]};
       font-size: 24px;
-      font-weight: 500;
+      font-weight: ${theme.typography.weight.medium};
     }
     h2 {
       font-size: 36px;
-      font-weight: 500;
+      font-weight: ${theme.typography.weight.medium};
     }
     h3 {
       font-size: 18px;
-      font-weight: 300;
+      font-weight: ${theme.typography.weight.regular};
     }
     p {
       font-size: 16px;
-      font-weight: 300;
+      font-weight: ${theme.typography.weight.regular};
       color: ${theme.colors.palette.gray[300]};
       line-height: 160%;
     }
+
     ${theme.breakpoints.minWidth('lg')} {
       gap: unset;
       h4 {
@@ -87,6 +89,28 @@ export const SocialMedia = styled.div`
           }
         }
       }
+    }
+  `}
+`
+
+export const WrapperLink = styled(Link)`
+  ${({ theme }) => css`
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100px;
+
+    ${theme.breakpoints.minWidth('sm')} {
+      max-width: 150px;
+    }
+
+    ${theme.breakpoints.minWidth('md')} {
+      max-width: 190px;
+    }
+
+    ${theme.breakpoints.minWidth('lg')} {
+      max-width: 170px;
     }
   `}
 `
