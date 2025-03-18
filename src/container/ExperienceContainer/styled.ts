@@ -34,7 +34,6 @@ export const WrapperExperience = styled.div`
     ${theme.breakpoints.minWidth('lg')} {
       flex-direction: row;
       gap: 160px;
-      height: 280px;
     }
   `}
 `
@@ -139,7 +138,6 @@ export const Project = styled.div`
       }
       p {
         font-size: 16px;
-        margin-bottom: 80px;
       }
       a {
         font-size: 16px;
@@ -151,7 +149,6 @@ export const Project = styled.div`
 export const WrapperText = styled.div`
   ${({ theme }) => css`
     width: 100%;
-    height: 280px;
     padding: 16px;
     box-shadow: 2px 4px 4px 2px ${theme.colors.primary[300]};
     background-color: ${theme.colors.palette.green[400]};

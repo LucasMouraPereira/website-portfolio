@@ -16,6 +16,7 @@ export const WrapperHeader = styled.nav<WrapperHeaderProps>`
     width: 100%;
     min-height: 80px;
     box-shadow: 2px 4px 4px 2px ${theme.colors.primary[300]};
+    z-index: 100;
   `}
 `
 
